@@ -35,5 +35,6 @@ spec:
   ports:
     - port: {{ .Values.userService.port }}
       targetPort: {{ .Values.userService.port }}
+      nodePort: 30008
   selector:
     app: user-service
