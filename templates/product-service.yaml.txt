@@ -35,5 +35,6 @@ spec:
   ports:
     - port: {{ .Values.productService.port }}
       targetPort: {{ .Values.productService.port }}
+      nodePort: 30009
   selector:
     app: product-service
