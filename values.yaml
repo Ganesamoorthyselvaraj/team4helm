@@ -7,7 +7,7 @@ mongo:
 userService:
   image:
     repository: sganesamoorthy/customer-service
-    tag: latest
+    tag: v1
   port: 8081
   env:
     SPRING_PROFILES_ACTIVE: docker
@@ -16,7 +16,7 @@ userService:
 productService:
   image:
     repository: sganesamoorthy/project-service
-    tag: latest
+    tag: v1
   port: 8082
   env:
     SPRING_PROFILES_ACTIVE: docker
